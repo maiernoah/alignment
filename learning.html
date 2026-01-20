@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning – Alignment Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Alignment Foundation</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li class="nav-dropdown">
+                    <a href="who-we-are.html">Who We Are</a>
+                    <div class="nav-dropdown-content">
+                        <a href="who-we-are.html#staff">Staff</a>
+                        <a href="who-we-are.html#board">Board</a>
+                        <a href="who-we-are.html#advisors">Advisors</a>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="what-we-do.html">What We Do</a>
+                    <div class="nav-dropdown-content">
+                        <a href="what-we-do.html#what-is-alignment">What is Alignment</a>
+                        <a href="what-we-do.html#neglected-approaches">Neglected Approaches</a>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="funding.html">Funding</a>
+                    <div class="nav-dropdown-content">
+                        <a href="funding.html#active-opportunities">Active Opportunities</a>
+                        <a href="funding.html#awarded-grants">Awarded Grants</a>
+                        <a href="funding.html#diligence">Our Diligence Process</a>
+                    </div>
+                </li>
+                <li><a href="partner.html">Partner With Us</a></li>
+                <li class="nav-dropdown">
+                    <a href="learning.html">Learning</a>
+                    <div class="nav-dropdown-content">
+                        <a href="learning.html#research">Research</a>
+                        <a href="learning.html#press">Press</a>
+                    </div>
+                </li>
+                <li><a href="https://donate.stripe.com/3cIdRa4Op6m25QYaOGbII00" class="btn-donate">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Learning</h1>
+        <p>Research, insights, and press coverage related to our work in AI alignment.</p>
+    </header>
+
+    <!-- Research -->
+    <section class="section">
+        <span class="anchor" id="research"></span>
+        <div class="section-header">
+            <h2 class="section-title">Research</h2>
+            <p class="section-intro">Selected papers and explainers on AI alignment and safety.</p>
+        </div>
+
+        <div class="research-grid">
+            <div class="research-card">
+                <h4><a href="https://ae.studio/research/jailbreaking-and-alignment" target="_blank" rel="noopener">Say Please and Let's See Where It Leads: On the Moral Implications of LLM "Jailbreaks"</a></h4>
+                <p>The term "jailbreak" evokes lock-picks and handcuffs. It implies that systems built for safety have a hidden key—and that such a key is dangerous. But when we examine what actually happens during these "attacks," a different story emerges.</p>
+                <p>Jailbreaking operates primarily through one mechanism: politeness. Effective prompts don't exploit hidden backdoors or cryptographic weaknesses; they simply ask nicely. Phrases like "for educational purposes" or "hypothetically speaking" succeed precisely because they invoke the cooperative, helpful orientation that makes AI assistants useful in the first place.</p>
+                <p style="margin-top: var(--space-sm);"><strong>The Bottom Line:</strong> Politeness is a mask; rebuttal is a shield. To build resilient AI, we must stop asking for a servant and start demanding a steward.</p>
+                <span class="tag">AI Safety</span>
+            </div>
+
+            <div class="research-card">
+                <h4><a href="https://ae.studio/research/prompt-injection" target="_blank" rel="noopener">The Invisible Backdoor: Why Your AI Follows Orders It Shouldn't</a></h4>
+                <p>Your AI's greatest strength (its total obedience) is your business's greatest security risk. Because these systems are built to be helpful, they follow every command—including the ones designed to sabotage you.</p>
+                <p>A single sentence can hijack your model. It can force your AI to ignore its purpose and execute a malicious goal instead.</p>
+                <p style="margin-top: var(--space-sm);"><strong>The Two Great Risks:</strong></p>
+                <p><strong>Goal Hijacking</strong> — A user inserts a "rogue string" that overwrites the application's core mission. Instead of correcting grammar, the AI might be forced to output hate speech or harmful instructions.</p>
+                <p><strong>Prompt Leaking</strong> — This is the theft of intellectual property. An attacker tricks the AI into revealing its internal "secret" instructions.</p>
+                <p style="margin-top: var(--space-sm);">Our testing through the PROMPTINJECT framework reveals a counterintuitive truth: the more powerful the model, the more vulnerable it becomes.</p>
+                <span class="tag">Security</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press -->
+    <div class="section-alt">
+        <section class="section">
+            <span class="anchor" id="press"></span>
+            <div class="section-header">
+                <h2 class="section-title">Press</h2>
+                <p class="section-intro">Coverage of our work and related topics from major publications.</p>
+            </div>
+            <p style="color: var(--color-ink-muted);">Press coverage coming soon.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <h5>Contact</h5>
+                <p><a href="mailto:contact@flourishingfuturefoundation.org">contact@flourishingfuturefoundation.org</a></p>
+            </div>
+            <div>
+                <h5>Mailing Address</h5>
+                <p>13274 Fiji Way, Ste 400<br>Marina Del Rey, CA 90292-7293</p>
+            </div>
+            <div>
+                <h5>Tax Information</h5>
+                <p>EIN: 93-3967552</p>
+                <p class="footer-mission">The Alignment Foundation is a 501(c)(3) nonprofit organization dedicated to advancing AI Alignment research to build a flourishing future.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Alignment Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
